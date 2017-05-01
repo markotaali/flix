@@ -1,0 +1,43 @@
+.ratingBox {
+	display: block;
+	background-color: #222;
+	padding: 1em 0 1em 0;
+	overflow: auto;
+	margin: 0;
+}
+
+.getRating {
+	display: inline;
+	padding: 1em;
+	color: #aaa;
+}
+
+.getRating:hover {
+	background-color: #282828;
+	color: #eee;
+}
+
+.ratingBox strong {
+	font-weight: 700;
+}
+
+.imdbLogo {
+	border-radius: 0.2em;
+	font-weight: 700;
+	display: inline;
+	margin: 0.3em;
+	padding: 0.7em;
+	background-color: #ebc12d;
+	color: #111;
+}
+
+.movieValue {
+	display: inline;
+	font-weight: 700;
+	padding: 1em;
+	color: #eee;
+}
+
+.movieValue small {
+	color: #666;
+}
