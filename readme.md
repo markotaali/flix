@@ -8,4 +8,4 @@ Disclaimer: Use at your own risk. Please note that this is an experimental exten
 
 ## In the next version
 
-* Support for multiple movies (more accurate results for movies with identical names, eg. Poltergeist (1982) and Poltergeist (2015).
+* Support for multiple movies – more accurate results for movies with identical names, eg. Poltergeist (1982) and Poltergeist (2015).
