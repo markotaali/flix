@@ -33,8 +33,8 @@ function getRating(movieName, containerName) {
 		if (movieObject['Response'] != 'False') {
 			movieRating = movieObject['Ratings'][0].Value;
 			console.log(movieRating);
-			movieValue = movieRating.split('/'); 
-			movieRating = '<a href="http://www.imdb.com/title/'+movieObject['imdbID']+'/"><div class="imdbLogo">IMDb</div></a><div class="movieValue">'+movieValue[0]+' <small>/10</small></div>';
+			movieValue = movieRating.split('/');
+			movieRating = '<a href="http://www.imdb.com/title/'+movieObject['imdbID']+'/" target="_blank"><div class="imdbLogo">IMDb</div></a><div class="movieValue">'+movieValue[0]+' <small>/10</small></div>';
 			$(containerName).html(movieRating);			
 		} else {
 			movieRating = "Movie not found.";
