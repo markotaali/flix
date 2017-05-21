@@ -1,8 +1,8 @@
 <img src="flix.png" width="44" height="44">
 
-# FLIx: Netflix with simple IMDb ratings
+# FLIx: Netflix with simple IMDb ratings – Chrome Extension
 
-Super simple 'Get IMDb rating' button for Netflix.
+FLIx is a *Google Chrome Extension* that adds a super simple 'Get IMDb rating' button on Netflix. Currently unpublished in Extensions.
 
 Disclaimer: Use at your own risk. Please note that this is an experimental extension and I can't be held responsible for anything that happens to you or you browser while you're using it.
 
