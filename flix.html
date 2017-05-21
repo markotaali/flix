@@ -5,7 +5,7 @@
     <style>
     	body {
     		width: 280px;
-    		height: 44px;
+    		height: 144px;
     	}
     	#icon {
     		float: left;
@@ -16,11 +16,28 @@
             overflow: auto;
             width: 220px;
         }
+        #form {
+            margin-top: 20px;
+        }
+        #messages {
+            font-weight: 700;
+        }
     </style>
+    <script src="flix.js"></script>
 </head>
 <body>
 	<div id="icon"><img src="flix.png" width="44" height="44" alt="FLIx"></div>
-    <div id="info">Open any Netflix page with movies and click on <strong>Get IMDb Rating</strong>.</div>
+    <div id="info">Open any Netflix page with movies and click on <strong>Get IMDb Rating</strong>.
+        <div id="form">
+            <h3>Your OMDb API Key</h3>
+                <input id="apikey" type="text">
+                <input id="submit" type="submit" value="Set key">
+                <p id="messages"></p>
+            <p>Can be obtained from <a href="https://www.patreon.com/omdb">OMDb API Patreon page</a> and will be stored in your browser's local storage. Cautious about security? Read more about <a href="https://developer.chrome.com/extensions/storage">Chrome storage</a>.</p>
+        </div>
+    </div>
+
+
 </body>
 </html>
 
