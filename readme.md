@@ -1,4 +1,4 @@
-<img src="flix.png">
+<img src="flix.png" width="44" height="44">
 
 # FLIx: Netflix with simple IMDb ratings
 
