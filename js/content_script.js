@@ -27,10 +27,10 @@ function initBoxes() {
 	}
 
 	// List all loaded slider items on the page
-	$('div.slider-item').each(function( index ) {
+	$('div.slider-item').each(function(index) {
 
 		// Make sure there isn't a Rating box already for each movie
-		if(!$(this).find('.ratingBox').html()) {
+		if (!$(this).find('.ratingBox').html()) {
 			// Create new div for Movie Rating if there wasn't one
 			$('<div/>', {
 				'class':'ratingBox',

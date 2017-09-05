@@ -30,3 +30,5 @@ Just enter your API key in FLIx extension's popup window under the icon and you'
 ## In the future
 
 * Support for multiple movies – more accurate results for movies with identical names, eg. Poltergeist (1982) and Poltergeist (2015).
+* Actual error handling :D
+* Bonus: prettier buttons
