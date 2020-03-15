@@ -22,6 +22,10 @@ Just enter your API key in FLIx extension's popup window under the icon and you'
 
 ## Updates
 
+### 20200315
+
+* Fixed breaking because of Netflix's changed HTML. 
+
 ### 20170520
 
 * 5000 millisecond refresh for the script to make sure that even the lazy loaded content gets their rating boxes.
