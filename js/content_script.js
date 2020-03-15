@@ -22,7 +22,6 @@ function initBoxes() {
 		// Get Api Key from Local Storage
 	    getMyApiKey( function(value) {
 	        myapikey = value.myapikey;
-	        // console.log(myapikey);
 	    });
 	}
 
@@ -39,7 +38,7 @@ function initBoxes() {
 
 			// Create a function for tracking when Rating Box is clicked, find Movie Title and get rating
 			$(this).find('.ratingBox').click(function() {
-				var movieName = $(this).parent().find('.video-preload-title-label').text();
+				var movieName = $(this).parent().find('.fallback-text').text();
 				$(this).html('<div class="getRating">Loading…</div>');
 				getRating(movieName, $(this));
 			});
@@ -62,17 +61,13 @@ function getRating(movieName, containerName) {
 	// Request with Base Url and Movie Name
 	var movieRequest = baseUrl+movieName;
 
-	// console.log(movieRequest);
-
 	// JSON request to Open movie database
 	$.getJSON( movieRequest, function(data) {
 		var movieObject = data;
-		console.log(movieObject);
 
 		// If the Movie Title was found, get the rating and place it in the container div
 		if (movieObject['Response'] != 'False') {
 			movieRating = movieObject['Ratings'][0].Value;
-			console.log(movieRating);
 			movieValue = movieRating.split('/');
 			movieRating = '<a href="http://www.imdb.com/title/'+movieObject['imdbID']+'/" target="_blank"><div class="imdbLogo">IMDb</div></a><div class="movieValue">'+movieValue[0]+' <small>/10</small></div>';
 			$(containerName).html(movieRating);			
