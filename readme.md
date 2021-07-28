@@ -22,6 +22,10 @@ Just enter your API key in FLIx extension's popup window under the icon and you'
 
 ## Updates
 
+### 20210728
+
+* Added some flexy css.
+
 ### 20200315
 
 * Fixed breaking because of Netflix's changed HTML. 
