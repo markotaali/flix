@@ -1,13 +1,13 @@
 .ratingBox {
-	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	background-color: #222;
-	padding: 1em 0 1em 0;
-	overflow: auto;
+	align-items: center;
 	margin: 0;
 }
 
 .getRating {
-	display: inline;
 	padding: 1em;
 	color: #aaa;
 }
@@ -24,11 +24,19 @@
 .imdbLogo {
 	border-radius: 0.2em;
 	font-weight: 700;
-	display: inline;
-	margin: 0.3em;
-	padding: 0.7em;
+	margin-left: 0.7em;
+	padding: 0.3em 0.7em;
 	background-color: #ebc12d;
 	color: #111;
+}
+
+.ratingBox a {
+	display: flex;
+}
+
+.ratingBox a:hover .imdbLogo {
+	background-color: #fbd13d;
+	color: #000;
 }
 
 .movieValue {
